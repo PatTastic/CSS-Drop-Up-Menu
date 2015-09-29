@@ -1,0 +1,30 @@
+#connect ul li a { 
+    font-weight: bold;
+    padding: 15px 10px;
+}
+
+#connect li{ 
+    position: relative; 
+    float: left;
+}
+
+#connect ul li ul, #connect:hover ul li ul, #connect:hover ul li:hover ul li ul{ 
+    display: none;
+    list-style-type: none; 
+    width: 140px;
+}
+
+#connect:hover ul, #connect:hover ul li:hover ul, #connect:hover ul li:hover ul li:hover ul { 
+    display: block;
+}
+
+#connect:hover ul li:hover ul { 
+    position: absolute;
+    margin-top: 1px;
+    font: 10px;
+}
+
+#connect>ul>li:hover>ul { 
+    bottom: 100%;
+    border-bottom: 1px solid transparent
+}
